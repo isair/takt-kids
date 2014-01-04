@@ -1,0 +1,1 @@
+web: gunicorn takt_kids.wsgi
