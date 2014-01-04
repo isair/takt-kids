@@ -97,3 +97,6 @@ STATICFILES_DIRS = (
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Append slashes.
+APPEND_SLASH = True
