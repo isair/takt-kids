@@ -1,0 +1,81 @@
+[
+{
+    "pk": 1, 
+    "model": "auth.group", 
+    "fields": {
+        "name": "Ticket sellers", 
+        "permissions": [
+            19
+        ]
+    }
+},
+{
+    "pk": 2, 
+    "model": "auth.group", 
+    "fields": {
+        "name": "Ticket managers", 
+        "permissions": [
+            19, 
+            20
+        ]
+    }
+},
+{
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "isair", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2014-01-07T10:25:04.412Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$FUgoQDhZiPmq$su6mphRk8zWQvODY2Gey+SZ6Bf24KDiYoMZRPVKkYoo=", 
+        "email": "run32a50mch@gmail.com", 
+        "date_joined": "2014-01-07T10:24:54.840Z"
+    }
+},
+{
+    "pk": 2, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "ticket_seller_demo", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2014-01-07T10:37:57Z", 
+        "groups": [
+            1
+        ], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$7B7G6OSpXOaz$dBf2u410TYbVVTaO0aW/7niqs0SDLLuVmw1sph3m/H4=", 
+        "email": "", 
+        "date_joined": "2014-01-07T10:37:57Z"
+    }
+},
+{
+    "pk": 3, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "ticket_manager_demo", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2014-01-07T10:38:14Z", 
+        "groups": [
+            2
+        ], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$3nAUT166uoGh$IXYY5co2ZcitHBmccoLZK6wEKDJ/Bbeq3PFCGOXn3bA=", 
+        "email": "", 
+        "date_joined": "2014-01-07T10:38:14Z"
+    }
+}
+]
