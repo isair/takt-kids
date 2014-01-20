@@ -7,4 +7,5 @@ class TicketAdmin(admin.ModelAdmin):
                     'register_date']
     search_fields = ['owner_name', 'ticket_number']
 
+admin.site.register(Event)
 admin.site.register(Ticket, TicketAdmin)
