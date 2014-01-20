@@ -13,3 +13,14 @@ class Ticket(models.Model):
 
     def __unicode__(self):
         return self.owner_name + ' (' + self.ticket_number + ')'
+
+    def clean(self):
+
+        if self.owner_name:
+            self.owner_name = ''.join(self.owner_name.strip().title().split())
+
+        if self.ticket_number:
+            self.ticket_number = ''.join(
+                self.ticket_number.strip().upper().split())
+
+        return self
