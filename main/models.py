@@ -6,6 +6,9 @@ class Event(models.Model):
     start_date = models.DateTimeField()
     end_date = models.DateTimeField()
 
+    def __unicode__(self):
+        return self.name
+
     def clean(self):
 
         if self.name:
