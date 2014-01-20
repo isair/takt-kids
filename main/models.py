@@ -17,10 +17,10 @@ class Ticket(models.Model):
     def clean(self):
 
         if self.owner_name:
-            self.owner_name = ''.join(self.owner_name.strip().title().split())
+            self.owner_name = ' '.join(self.owner_name.strip().title().split())
 
         if self.ticket_number:
-            self.ticket_number = ''.join(
+            self.ticket_number = ' '.join(
                 self.ticket_number.strip().upper().split())
 
         return self
