@@ -1,6 +1,17 @@
 from django.db import models
 
 
+class Event(models.Model):
+    name = models.CharField(max_length=255)
+    start_date = models.DateTimeField()
+    end_date = models.DateTimeField()
+
+    def clean(self):
+
+        if self.name:
+            self.name = ' '.join(self.name.strip().title().split())
+
+
 class Ticket(models.Model):
     GENDER_CHOICES = (
         ('M', 'Male'),
