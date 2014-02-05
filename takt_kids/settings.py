@@ -47,6 +47,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'storages',
     'boto',
+    'sorl.thumbnail',
     'main',
     'cosplay',
 )
