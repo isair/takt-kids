@@ -8,5 +8,6 @@ django-grappelli==2.5.1
 django-storages==1.1.8
 gunicorn==18.0
 psycopg2==2.5.1
+sorl-thumbnail==11.12
 static==0.4
 wsgiref==0.1.2
