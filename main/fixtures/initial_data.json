@@ -1,0 +1,9 @@
+[{
+    "pk": 1,
+    "model": "main.event",
+    "fields": {
+        "name": "Kontakt 4",
+        "end_date": "2014-02-16T20:00:00Z",
+        "start_date": "2014-02-15T08:00:00Z"
+    }
+}]
