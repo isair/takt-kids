@@ -47,6 +47,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'storages',
     'boto',
+    's3_folder_storage',
     'sorl.thumbnail',
     'main',
     'cosplay',
@@ -91,8 +92,23 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_ROOT = 'staticfiles'
-# STATIC_URL = '/static/'
+DEFAULT_S3_PATH = 'media'
+STATIC_S3_PATH = 'static'
+
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = 'takt-kids'
+
+STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
+DEFAULT_FILE_STORAGE = 's3_folder_storage.s3.DefaultStorage'
+
+STATIC_ROOT = '/%s/' % STATIC_S3_PATH
+STATIC_URL = '//s3.amazonaws.com/%s/static/' % AWS_STORAGE_BUCKET_NAME
+
+MEDIA_ROOT = '/%s/' % DEFAULT_S3_PATH
+MEDIA_URL = '//s3.amazonaws.com/%s/media/' % AWS_STORAGE_BUCKET_NAME
+
+ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
@@ -106,15 +122,3 @@ APPEND_SLASH = True
 
 # Grappelli configuration
 GRAPPELLI_ADMIN_TITLE = 'TAKT - KIDS'
-
-# Amazon Storage
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = 'takt-kids'
-
-STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-
-STATIC_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/static/'
-MEDIA_URL = 'http://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/media/'
-ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
