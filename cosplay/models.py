@@ -13,7 +13,7 @@ def u_file_rename(instance, filename):
         print filename
         name = uuid.uuid1()
         ext = filename.split('.')[-1]
-        return 'cosplayers/%s.%s' % (name, ext)
+        return '%s.%s' % (name, ext)
 
 
 class Cosplayer(models.Model):
