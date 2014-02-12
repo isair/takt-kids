@@ -24,8 +24,9 @@ class Event(models.Model):
 
 class Ticket(models.Model):
     GENDER_CHOICES = (
-        ('M', 'Male'),
-        ('F', 'Female'),
+        ('M', _('Male')),
+        ('F', _('Female')),
+        ('O', _('Other'))
     )
     event = models.ForeignKey('Event')
     owner_name = models.CharField(_('owner name'), max_length=60)
