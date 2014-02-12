@@ -18,7 +18,6 @@ class Cosplayer(models.Model):
     class Meta:
         verbose_name = _('cosplayer')
         verbose_name_plural = _('cosplayers')
-        unique_together = (('ticket__event', 'contest_number'), )
 
     def __unicode__(self):
         return _('Cosplayer %s') % self.ticket.owner_name
