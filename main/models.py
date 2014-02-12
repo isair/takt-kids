@@ -41,7 +41,7 @@ class Ticket(models.Model):
     achievements = models.ManyToManyField(
         'Achievement', verbose_name=_('achievements'), blank=True)
     cards = models.ManyToManyField(
-        'Achievement', verbose_name=_('cards'), blank=True)
+        'Achievement', verbose_name=_('cards'), related_name=_('cards'), blank=True)
 
     class Meta:
         verbose_name = _('ticket')
