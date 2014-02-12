@@ -49,6 +49,7 @@ INSTALLED_APPS = (
     'boto',
     's3_folder_storage',
     'sorl.thumbnail',
+    'easy_select2',
     'main',
     'cosplay',
 )
