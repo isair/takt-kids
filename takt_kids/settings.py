@@ -104,10 +104,10 @@ STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
 DEFAULT_FILE_STORAGE = 's3_folder_storage.s3.DefaultStorage'
 
 STATIC_ROOT = '/%s/' % STATIC_S3_PATH
-STATIC_URL = '//s3.amazonaws.com/%s/static/' % AWS_STORAGE_BUCKET_NAME
+STATIC_URL = '//%s.s3.amazonaws.com/static/' % AWS_STORAGE_BUCKET_NAME
 
 MEDIA_ROOT = '/%s/' % DEFAULT_S3_PATH
-MEDIA_URL = '//s3.amazonaws.com/%s/media/' % AWS_STORAGE_BUCKET_NAME
+MEDIA_URL = '//%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
 
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
