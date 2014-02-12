@@ -1,5 +1,7 @@
 from django.contrib import admin
 from main.models import *
+from main.forms import *
+from easy_select2 import select2_modelform
 
 
 class EventAdmin(admin.ModelAdmin):
@@ -9,6 +11,7 @@ class EventAdmin(admin.ModelAdmin):
 
 
 class TicketAdmin(admin.ModelAdmin):
+    form = TicketForm
     list_display = ('event', 'ticket_number', 'free', 'voucher_number',
                     'owner_name', 'owner_gender', 'owner_year_of_birth',
                     'notes', 'register_date')
@@ -21,6 +24,7 @@ class TicketAdmin(admin.ModelAdmin):
 
 
 class AchievementAdmin(admin.ModelAdmin):
+    form = select2_modelform(Achievement)
     list_display = ('event', 'name', 'description')
     list_display_links = ('name', )
     search_fields = ('name', 'description')
