@@ -6,13 +6,22 @@ from django.utils.translation import ugettext_lazy as _
 from sorl.thumbnail import ImageField, get_thumbnail
 from main.models import Ticket
 
+import uuid
+
+
+def u_file_rename(instance, filename):
+        print filename
+        name = uuid.uuid1()
+        ext = filename.split('.')[-1]
+        return 'cosplayers/%s.%s' % (name, ext)
+
 
 class Cosplayer(models.Model):
     ticket = models.OneToOneField(Ticket)
-    picture = ImageField(upload_to='storages.backends.s3boto')
+    picture = ImageField(upload_to=u_file_rename)
     character_name = models.CharField(_('character name'), max_length=100)
     notes = models.CharField(_('notes'), max_length=255, blank=True)
-    contest_number = models.IntegerField(blank=True)
+    contest_number = models.IntegerField(null=True, blank=True)
     register_date = models.DateTimeField(_('register date'), auto_now_add=True)
 
     class Meta:

@@ -76,8 +76,6 @@ class Ticket(models.Model):
                 raise ValidationError(
                     _('This voucher name is already used at this event.'))
 
-        return self
-
 
 class Achievement(models.Model):
     event = models.ForeignKey('Event')
