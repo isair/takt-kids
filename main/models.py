@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+from django.core.exceptions import ValidationError
 
 
 class Event(models.Model):
@@ -18,6 +19,7 @@ class Event(models.Model):
 
     def clean(self):
 
+        # Format name (e.g.: Kontakt Live 2400)
         if self.name:
             self.name = ' '.join(self.name.strip().title().split())
 
@@ -35,31 +37,44 @@ class Ticket(models.Model):
     owner_year_of_birth = models.IntegerField(_('year of birth'))
     ticket_number = models.CharField(_('ticket number'), max_length=50)
     free = models.BooleanField(_('free'))
-    voucher_number = models.IntegerField(_('voucher number'), blank=True)
+    voucher_number = models.IntegerField(
+        _('voucher number'), null=True, blank=True)
     notes = models.CharField(_('notes'), max_length=255, blank=True)
     register_date = models.DateTimeField(_('register date'), auto_now_add=True)
     achievements = models.ManyToManyField(
         'Achievement', verbose_name=_('achievements'), blank=True)
     cards = models.ManyToManyField(
-        'Achievement', verbose_name=_('cards'), related_name=_('cards'), blank=True)
+        'Achievement', verbose_name=_('cards'), related_name=_('cards'),
+        blank=True)
 
     class Meta:
         verbose_name = _('ticket')
         verbose_name_plural = _('tickets')
-        unique_together = (
-            ('event', 'ticket_number'), ('event', 'voucher_number'), )
+        unique_together = (('event', 'ticket_number'), )
 
     def __unicode__(self):
         return self.owner_name + ' (' + self.ticket_number + ')'
 
     def clean(self):
 
+        # Format name (e.g.: John Janette Johnson)
         if self.owner_name:
             self.owner_name = ' '.join(self.owner_name.strip().title().split())
 
+        # Format ticket number (e.g.: A 212)
         if self.ticket_number:
             self.ticket_number = ' '.join(
                 self.ticket_number.strip().upper().split())
+
+        # Unique pair enforcement: ('event', 'voucher_number')
+        if self.voucher_number is not None:
+            queryset = Ticket.objects.exclude(
+                id=self.id).filter(
+                voucher_number=self.voucher_number).filter(
+                event=self.event)
+            if queryset.exists():
+                raise ValidationError(
+                    _('This voucher name is already used at this event.'))
 
         return self
 
@@ -79,9 +94,11 @@ class Achievement(models.Model):
 
     def clean(self):
 
+        # Format name (e.g.: Walked 100 Miles)
         if self.name:
             self.name = ' '.join(self.name.strip().title().split())
 
+        # Format description (e.g.: Given to people who walk 100 miles)
         if self.description:
             self.description = ' '.join(
                 self.description.strip().lower().split()).capitalize()
