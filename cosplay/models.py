@@ -39,7 +39,7 @@ class Cosplayer(models.Model):
 
         if self.notes:
             self.notes = ' '.join(
-                self.description.strip().lower().split()).capitalize()
+                self.notes.strip().lower().split()).capitalize()
 
     def picture_thumbnail(self):
 
