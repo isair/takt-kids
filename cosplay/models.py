@@ -13,7 +13,7 @@ def u_file_rename(instance, filename):
         print filename
         name = uuid.uuid1()
         ext = filename.split('.')[-1]
-        return '%s.%s' % (name, ext)
+        return 'cosplayers/%s.%s' % (name, ext)
 
 
 class Cosplayer(models.Model):
@@ -44,11 +44,7 @@ class Cosplayer(models.Model):
     def picture_thumbnail(self):
 
         if self.picture:
-            # return '<img src="%s/%s" width="80" height="80" />' % (settings.MEDIA_URL[:-1],
-            # get_thumbnail(self.picture, '80x80', quality=99))
-            url = '<img src="//%s.s3.amazonaws.com/media/%s" width="80" />'
-            data = (settings.AWS_STORAGE_BUCKET_NAME,
-                    get_thumbnail(self.picture, '80x80', quality=99))
-            return url % data
+            return '<img src="%s/%s" width="80" height="80" />' % (settings.MEDIA_URL[:-1],
+                                                                   get_thumbnail(self.picture, '80x80', quality=99))
 
     picture_thumbnail.allow_tags = True
