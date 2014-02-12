@@ -32,15 +32,22 @@ class Ticket(models.Model):
     owner_name = models.CharField(_('owner name'), max_length=60)
     owner_gender = models.CharField(
         _('owner gender'), max_length=1, choices=GENDER_CHOICES)
+    owner_year_of_birth = models.IntegerField(_('year of birth'))
     ticket_number = models.CharField(_('ticket number'), max_length=50)
+    free = models.BooleanField(_('free'))
+    voucher_number = models.IntegerField(_('voucher number'), blank=True)
+    notes = models.CharField(_('notes'), max_length=255, blank=True)
     register_date = models.DateTimeField(_('register date'), auto_now_add=True)
     achievements = models.ManyToManyField(
         'Achievement', verbose_name=_('achievements'), blank=True)
+    cards = models.ManyToManyField(
+        'Achievement', verbose_name=_('cards'), blank=True)
 
     class Meta:
         verbose_name = _('ticket')
         verbose_name_plural = _('tickets')
-        unique_together = (('event', 'ticket_number'), )
+        unique_together = (
+            ('event', 'ticket_number'), ('event', 'voucher_number'), )
 
     def __unicode__(self):
         return self.owner_name + ' (' + self.ticket_number + ')'
