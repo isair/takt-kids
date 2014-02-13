@@ -6,10 +6,12 @@ dj-database-url==0.2.2
 dj-static==0.0.5
 django-easy-select2==1.0.2
 django-grappelli==2.5.1
+django-pylibmc-sasl==0.2.4
 django-s3-folder-storage==0.2
 django-storages==1.1.8
 gunicorn==18.0
 psycopg2==2.5.1
+pylibmc==1.2.3
 sorl-thumbnail==11.12
 static==0.4
 wsgiref==0.1.2
