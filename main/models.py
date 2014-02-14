@@ -61,8 +61,12 @@ class Ticket(models.Model):
         if self.owner_name:
             self.owner_name = ' '.join(self.owner_name.strip().title().split())
 
-        # Unique pair enforcement: ('event', 'voucher_number')
         if self.voucher_number is not None:
+
+            # If there is a voucher number, make sure this is a free ticket
+            self.free = True
+
+            # Unique pair enforcement: ('event', 'voucher_number')
             queryset = Ticket.objects.exclude(
                 id=self.id).filter(
                 voucher_number=self.voucher_number).filter(
