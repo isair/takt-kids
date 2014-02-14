@@ -11,7 +11,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "1-Etkinliğe Her Iki Gün De Kat",
+        "name": "1- Etkinliğe her iki gün de katıldım.",
         "description": "Etkinlikte her iki gün de achivment yaparak, iki gün de katılımcı olduğunuzu kanıtlayın."
     }
 }, {
@@ -19,7 +19,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "2-İkon'La Çektirdiğim Bir Foto",
+        "name": "2- İkon'la çektirdiğim bir fotoğrafı, bir sosyal paylaşım ağında paylaştım.",
         "description": "Batmobile ile beraber çektirdiğiniz bir fotoğrafı facebook, twitter gibi bir sosyal paylaşım ağında paylaştığınızı bize gösterin."
     }
 }, {
@@ -27,7 +27,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "3-2 Tane Plastik Şişe Kapağı G",
+        "name": "3- 2 tane plastik şişe kapağı getirdim.",
         "description": "2 adet mavi su şişesi kapağı bulun ve bize getirip teslim edin. kapakları nasıl bulacağınız sizin yaratıcılığınıza kalmış."
     }
 }, {
@@ -35,71 +35,72 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "5-Anı Defterine Yazı Yazdım.",
-        "description": "Kontakt 4 anı defteri içine, hissettikleriniz veya buradaki tecrübeniz hakkında birkaç cümle not yazın."
+        "name": "4- Foursquare'de yer bildirimi yaptığımı gösterdim.",
+        "description": "Akıllı telefonunuz veya tabletinizle kontakt 4'te foursquare'de yer bildirimi veya facebook'da check-in yaptığınızı gösterin."
     }
 }, {
     "pk": 5,
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "6-Şehir Dışından Geldiğimi Kan",
-        "description": "Gelmek için kullandığınız vasıtanın bileti, yolda yediğiniz yemeğin fişi gibi somut bir kanıtla bize kontakt 4'e katı lmak iç in şehir dışı ndan geldiğinizi gösterin."
+        "name": "5- Anı defterine yazı yazdım.",
+        "description": "Kontakt 4 anı defteri içine, hissettikleriniz veya buradaki tecrübeniz hakkında birkaç cümle not yazın."
     }
 }, {
     "pk": 6,
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "7 - Kontakt 1 Biletimi Gösterdim",
-        "description": "Kontakt 1 biletinizi yanınızda getirin ve bize gösterin."
+        "name": "6- Şehir dışından geldiğimi kanıtladım.",
+        "description": "Gelmek için kullandığınız vasıtanın bileti, yolda yediğiniz yemeğin fişi gibi somut bir kanıtla bize kontakt 4'e katı lmak iç in şehir dışı ndan geldiğinizi gösterin."
     }
 }, {
     "pk": 7,
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "8 - Kontakt 2 Biletimi Gösterdim",
-        "description": "Kontakt 2 biletinizi yanınızda getirin ve bize gösterin."
+        "name": "7- Kontakt 1 biletimi gösterdim.",
+        "description": "Kontakt 1 biletinizi yanınızda getirin ve bize gösterin."
     }
 }, {
     "pk": 8,
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "9 - Kontakt 3 Biletimi Gösterdim",
-        "description": "Kontakt 3 biletinizi yanınızda getirin ve bize gösterin."
+        "name": "8- Kontakt 2 biletimi gösterdim.",
+        "description": "Kontakt 2 biletinizi yanınızda getirin ve bize gösterin."
     }
 }, {
     "pk": 9,
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "10 - Anne, Baba Veya Çocuğumla G",
-        "description": "Anne, baba veya çocuğunuzu, kimliklerinizle beraber achivement standına getirin ve kanıtlayın."
+        "name": "9- Kontakt 3 biletimi gösterdim.",
+        "description": "Kontakt 3 biletinizi yanınızda getirin ve bize gösterin."
     }
 }, {
     "pk": 10,
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "11 - Kontakt'a Ayakkabı Bağcığım",
-        "description": "Tokanızdan pantolonunuza, çorabınızdan ayakkabı bağcığınıza kadar dışarıdan görünen her kıyafetinizin aynı renk olması gerekmektedir."
+        "name": "10- Anne, baba veya çocuğumla geldim.",
+        "description": "Anne, baba veya çocuğunuzu, kimliklerinizle beraber achivement standına getirin ve kanıtlayın."
     }
 }, {
     "pk": 11,
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "4-Foursquare'de Yer Bildirimi",
-        "description": "Akıllı telefonunuz veya tabletinizle kontakt 4'te foursquare'de yer bildirimi veya facebook'da check-in yaptığınızı gösterin."
+        "name": "11- Kontakt'a ayakkabı bağcığıma kadar tek renk giyinerek geldim.",
+        "description": "Tokanızdan pantolonunuza, çorabınızdan ayakkabı bağcığınıza kadar dışarıdan görünen her kıyafetinizin aynı renk olması gerekmektedir."
     }
+
 }, {
     "pk": 12,
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "12-Kontakt 4 Etkinlik Linkini",
+        "name": "12- Kontakt 4 etkinlik linkini paylaştım.",
         "description": "Facebook, twitter gibi bir sosyal paylaşım ağında Kontakt 4 etkinlik linkini paylaşmış olduğunuzu gösterin."
     }
 }, {
@@ -107,15 +108,15 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "13-Tüm Alan Oyunlarına Katıldı",
-        "description": "Assasin, hazine avı, en az bir kutu oyunu, magic: the gathering, arcade oyunlarından oynayın ve bu achivementların hepsini aldığınızı gösterin."
+        "name": "13- Tüm alan oyunlarına katıldım.",
+        "description": "Assasin, hazine avı, en az bir kutu oyunu, Magic: The Gathering, arcade oyunlarından oynayın ve bu achivementların hepsini aldığınızı gösterin."
     }
 }, {
     "pk": 14,
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "14-Penguen Standından Imza Ald",
+        "name": "14- Penguen standından imza aldım.",
         "description": "Penguen standına uğrayıp en az bir yazar/çizer imzası alıp gösterin."
     }
 }, {
@@ -123,7 +124,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "15-Devrim Kunter'den Imza Aldı",
+        "name": "15- Devrim Kunter'den imza aldım.",
         "description": "Seyfettin efendi standı na uğrayıp devrim kunter'in imzasını alıp gösterin."
     }
 }, {
@@ -131,7 +132,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "16-Bütün Rare Kartları Tamamla",
+        "name": "16- Bütün rare kartları tamamladım.",
         "description": "Bütün rare achivement kartlarını tamamladığınızı gösterin."
     }
 }, {
@@ -139,7 +140,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "17- Bütün Uncommon Kartları Ta",
+        "name": "17- Bütün uncommon kartları tamamladım.",
         "description": "Bütün uncommon achivement kartlarını tamamladığınızı gösterin."
     }
 }, {
@@ -147,7 +148,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "18-Bütün Common Kartları Tamam",
+        "name": "18- Bütün common kartları tamamladım.",
         "description": "Bütün common achivement kartlarını tamamladığınızı gösterin."
     }
 }, {
@@ -155,7 +156,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "19-Bütün Kartları Tamamladım.",
+        "name": "19- Bütün kartları tamamladım.",
         "description": "Achivement kartlarının tamamını, ilk karttan son karta kadar tamamladığınızı gösterin."
     }
 }, {
@@ -163,7 +164,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "20-Cosplay Yarışmasına Oy Verd",
+        "name": "20- Cosplay yarışmasına oy verdim.",
         "description": "Yarışmaya oy verdiğinizde ve yarışma sonuçları açıklandığında achivementınız otomatik olarak sisteme girer."
     }
 }, {
@@ -171,7 +172,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "21-Bir Crossplay Yaptım.",
+        "name": "21- Bir crossplay yaptım.",
         "description": "Karşı cinsinize ait bir cosplay yaptığınızı gösterin."
     }
 }, {
@@ -179,7 +180,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "22-Gerçek Bir Insanın Cosplayi",
+        "name": "22- Gerçek bir insanın cosplayini yaptım.",
         "description": "Marilyn monroe, micheal jackson, johnny depp vb. gerçek insanların cosplayini yaptığınızı gösterin. hayır kendi cosplayinizi yapmış sayılmazsınız. hayır arkadaşınızın kıyafetini giyerek onun cosplayini yapmış da sayılmazsınız."
     }
 }, {
@@ -187,7 +188,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "23-Çizgiroman Karakteri Cospla",
+        "name": "23- Çizgiroman karakteri cosplayi yaptım.",
         "description": "Batman, black widow, superman, iron man vb. çizgiroman karakteri cosplayini yaptığınızı gösterin."
     }
 }, {
@@ -195,7 +196,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "24-Anime/Manga Karakteri Cospl",
+        "name": "24- Anime/manga karakteri cosplayi yaptım.",
         "description": "Naruto, luffy, lucy(nyuu), misa misa vb. anime/manga karakteri cosplayini yaptığınızı gösterin."
     }
 }, {
@@ -203,7 +204,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "25-Oyun Karakteri Cosplayi Yap",
+        "name": "25- Oyun karakteri cosplayi yaptım.",
         "description": "Gordon freeman, lara croft, katarina, lux, link vb. bir oyun karakteri cosplayini yaptığınızı gösterin."
     }
 }, {
@@ -211,7 +212,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "26-Film/Dizi Karkteri Cosplayi",
+        "name": "26- Film/dizi karkteri cosplayi yaptım.",
         "description": "Hannibal lecter, doctor who, padme amidala vb. film karkteri cosplayini yaptığınızı gösterin."
     }
 }, {
@@ -219,7 +220,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "27-En Az 3 Arkadaş Grup Cospla",
+        "name": "27- En az 3 arkadaş grup cosplayi yaptık.",
         "description": "Aynı film, anime, manga, oyun veya çizgiromandan yapılmış, farklı karakterlerden oluşan en az 3 kişilik cosplay grubunuzla standa gelip grubunuzu ve cosplaylerinizi gösterin. hayır 3 tane 11. doktor bir grup cosplayi değildir."
     }
 }, {
@@ -227,7 +228,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "28-Assasin Oyununa Katıldım.",
+        "name": "28- Assasin oyununa katıldım.",
         "description": "Assasin'de katıldığınız session sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -235,7 +236,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "29 - Assasin Oyununu Kazandım.",
+        "name": "29- Assasin oyununu kazandım.",
         "description": "Assasin'de oyunu kazanmanız durumunda katıldığınız session sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -243,7 +244,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "30-Assasin Oyununda En Az Bir",
+        "name": "30- Assasin oyununda en az bir kişiyi öldürdüm.",
         "description": "Assasin'de en az bir kişiyi öldürmeniz halinde katıldığınız session sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -251,7 +252,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "31 - Hazine Avına Katıldım.",
+        "name": "31- Hazine avına katıldım.",
         "description": "Hazine avına katıldığınız session sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -259,7 +260,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "32 - Hazine Avında Ilk Questi Ta",
+        "name": "32- Hazine avında ilk questi tamamladım.",
         "description": "Hazine avına katıldığınız ve ilk questi tamamladığınız taktirde session sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -267,7 +268,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "33 - Hazine Avı nda Kazanan Takım",
+        "name": "33- Hazine avında kazanan takımda yer aldım.",
         "description": "Hazine avına katıldığınız ve kazanan takımda yer aldığınız taktirde session sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -275,7 +276,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "34 - Hazine Avında Takımın En De",
+        "name": "34- Hazine avında takımın en değerli oyuncusu seçildim.",
         "description": "Hazine avına katıldığınız ve session süresince en çok yanıtı verip, çözüme giden yolda en çok yardım eden kişi olup en değerli oyuncu seçilmeniz halinde session sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -283,7 +284,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "35 - Magic: The Gathering Oynadı",
+        "name": "35- Magic: The Gathering oynadım.",
         "description": "Magic: the gathering oynarken çekilmiş bir fotoğrafınızı gösterin."
     }
 }, {
@@ -291,7 +292,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "36 - Warhammer Figürü Boyadım.",
+        "name": "36- Warhammer figürü boyadım.",
         "description": "Warhammer standında boyadığınız figürü gösterin."
     }
 }, {
@@ -299,7 +300,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "37 - Arcade Oyunlarından En Az B ",
+        "name": "37- Arcade oyunlarından en az birini oynadım.",
         "description": "Arcade oyunlarından en az birini oynarken çekilmiş fotoğrafınızı gösterin."
     }
 }, {
@@ -307,7 +308,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "38 - Larp'a Katıldım.",
+        "name": "38- LARP'a katıldım.",
         "description": "Larp'a katıldığınız oyun sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -315,7 +316,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "39 - Larp'a Master Larper Olarak",
+        "name": "39- LARP'a master LARPer olarak katıldım.",
         "description": "Larp'a master larper olarak katıldığınız oyun sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -323,7 +324,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "40 - Larp Oyunuma Zamanında Geld",
+        "name": "40- LARP oyunuma zamanında geldim.",
         "description": "Larp'a zamanında katıldığınız oyun sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -331,7 +332,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "41-Larp Oyunuma Kostümümle Gel",
+        "name": "41- LARP oyunuma kostümümle geldim.",
         "description": "Larp'a kostümünüzle katıldığınız oyun sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -339,7 +340,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "42 - Larp Karakter Kağıdımın Üze",
+        "name": "42- LARP karakter kağıdımın üzerine karakterimin resmini çizdim.",
         "description": "Larp'a katıldığınız oyunun karakter kağıdının üzerine resim çizip gm/st/dm'inize gösterdiğiniz taktirde oyununuz sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -347,7 +348,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "43 - Larp Karakter Kağıdımın Fot",
+        "name": "43- LARP karakter kağıdımın fotoğrafını çekip bir sosyal paylaşım ağında paylaştım.",
         "description": "Larp'a katıldığınız oyunun karakter kağıdınızın fotoğrafını bir sosyal paylaşım ağında paylaşıp gm/st/dm'inize gösterdiğiniz taktirde oyununuz sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -355,7 +356,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "44 - Frp Oynadım.",
+        "name": "44- FRP oynadım.",
         "description": "Frp oynadığınız oyun sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -363,7 +364,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "45 - Frp Oyunuma Kendi Zarlarımla",
+        "name": "45- FRP oyunuma kendi zarlarımla geldim.",
         "description": "Kendi zarlarınızı getirdiğiniz frp oyunu sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -371,7 +372,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "46 - Frp Oyunuma Zamanında Geldi",
+        "name": "46- FRP oyunuma zamanında geldim.",
         "description": "Zamanı nda geldiğ iniz frp oyunu sona erdiğ inde achivementı nı z sisteme girilecektir."
     }
 }, {
@@ -379,7 +380,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "47 - Frp Oyunumdaki Karakterime",
+        "name": "47- FRP oyunumdaki karakterime uygun giyindim veya uygun aksesuar getirdim.",
         "description": "Karakterinize uygun giyindiğiniz veya aksesuar getirdiğiniz frp oyunu sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -387,7 +388,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "48 - Frp Karakter Kağıdımın Üzer",
+        "name": "48- FRP karakter kağıdımın üzerine karakterimin resmini çizdim.",
         "description": "Frp oyununuzun karakter kağıdının üzerine resim çizip gm/st/dm'inize gösterdiğiniz taktirde oyununuz sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -395,7 +396,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "49-Frp Karakter Kağıdımın Foto",
+        "name": "49- FRP karakter kağıdımın fotoğrafını çekip bir sosyal paylaşım ağında paylaştım.",
         "description": "Frp oyununuzun karakter kağıdının fotoğrafını bir sosyal paylaşım ağında paylaşıp gm/st/dm'inize gösterdiğiniz taktirde oyununuz sona erdiğinde achivementınız sisteme girilecektir."
     }
 }, {
@@ -403,7 +404,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "50 - Frp Oyunumun Sonuna Kadar O",
+        "name": "50- FRP oyunumun sonuna kadar oyunda kaldım.",
         "description": "Frp oynadığınız oyun sona erdiğinde hala oyun masasındaysanız achivementınız sisteme girilecektir."
     }
 }, {
@@ -411,7 +412,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "51 - Birden Fazla Frp / Larp Oyunu",
+        "name": "51- Birden fazla FRP/LARP oyununa katıldım.",
         "description": "Kontakt 4 boyunca 1 larp 1 frp, 2 larp veya 2 frp oynayanlar alıyor."
     }
 }, {
@@ -419,7 +420,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "52 - Anadolu Hikaye Anlatıcıları ",
+        "name": "52- Anadolu Hikaye Anlatıcıları standında karakter kağıdı doldurdum.",
         "description": "Anadolu hikaye anlatıcıları standından alacağınız karakter kağıdınızı doldurup bize getirin ve gösterin."
     }
 }, {
@@ -427,7 +428,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "53 - Anadolu Hikaye Anlatıcıları",
+        "name": "53- Anadolu Hikaye Anlatıcıları'nın Facebook'daki sayfasını beğendim.",
         "description": "Anadolu hikaye anlatıcıları standındaki qr kodu kullanarak facebook'daki sayfalarını beğendiğinizi gösterin."
     }
 }, {
@@ -435,7 +436,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "54-En Az Bir Workshop'a Katıld",
+        "name": "54- En az bir Workshop'a katıldım.",
         "description": "En az bir workshop'a katılıp ilgili kartı aldıktan sonra achivement masasına aldığınız kartı gösterin."
     }
 }, {
@@ -443,7 +444,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "55-En Az Bir Seminere Katıldım",
+        "name": "55- En az bir seminere katıldım.",
         "description": "En az bir seminere katılıp ilgili kartı aldıktan sonra achivement masasına aldığınız kartı gösterin."
     }
 }, {
@@ -451,7 +452,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "56-En Az Bir Turnuvaya Katıldı",
+        "name": "56- En az bir turnuvaya katıldım.",
         "description": "En az bir turnuvaya katılıp ilgili kartı aldıktan sonra achivement masasına aldığınız kartı gösterin."
     }
 }, {
@@ -459,7 +460,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "57-Market Place'den 10Tl Ve Üz",
+        "name": "57- Market Place'den 10tl ve üzeri alışveriş yaptım.",
         "description": "Market place'den 10tl ve üzeri alışveriş yapıp ilgili kartı aldıktan sonra achivement masasına aldığınız kartı gösterin."
     }
 }, {
@@ -467,7 +468,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "58-Görev İptal-Karti Yok",
+        "name": "58- Riot standına uğradım.",
         "description": "Görev iptal-karti yok"
     }
 }, {
@@ -475,7 +476,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "59-Baykuş Standındaki Anketi D",
+        "name": "59- Baykuş standındaki anketi doldurdum.",
         "description": "Standa uğrayıp ilgili stand kartını aldıktan sonra achivement masasına aldığınız kartı gösterin."
     }
 }, {
@@ -483,7 +484,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "60-Gerekli Şeyler Standına Uğr",
+        "name": "60- Gerekli Şeyler standına uğradım.",
         "description": "Standa uğrayıp ilgili stand kartını aldıktan sonra achivement masasına aldığınız kartı gösterin."
     }
 }, {
@@ -491,7 +492,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "61-Marmara Çizgi Çizgi Düşler",
+        "name": "61- Marmara Çizgi Çizgi Düşler standına uğradım.",
         "description": "Standa uğrayıp ilgili stand kartını aldıktan sonra achivement masasına aldığınız kartı gösterin."
     }
 }, {
@@ -499,7 +500,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "62-Sancak Beyi Standına Uğradı",
+        "name": "62- Sancak Beyi standına uğradım.",
         "description": "Standa uğrayıp ilgili stand kartını aldıktan sonra achivement masasına aldığınız kartı gösterin."
     }
 }, {
@@ -507,7 +508,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "63-Mstar Oyununda Belirli Bir",
+        "name": "63- MStar oyununda belirli bir puanı geçtim.",
         "description": "Standda belirtilen puanı geçtiğinizde verilen kartı gösterin."
     }
 }, {
@@ -515,7 +516,7 @@
     "model": "main.achievement",
     "fields": {
         "event": 1,
-        "name": "64-Bogami Kutu Oyunlardan En A",
+        "name": "64- Bogami kutu oyunlardan en az birini oynadım.",
         "description": "Bogami kutu oyunlardan en az birini oynadığınızda verilen kartı gösterin."
     }
 }]
