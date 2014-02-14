@@ -53,7 +53,7 @@ class Ticket(models.Model):
         unique_together = (('event', 'ticket_number'), )
 
     def __unicode__(self):
-        return self.owner_name + ' (' + self.ticket_number + ')'
+        return '{0} ({1})'.format(self.owner_name, self.ticket_number)
 
     def clean(self):
 
