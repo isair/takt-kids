@@ -35,7 +35,7 @@ class Ticket(models.Model):
     owner_gender = models.CharField(
         _('owner gender'), max_length=1, choices=GENDER_CHOICES)
     owner_year_of_birth = models.PositiveIntegerField(_('year of birth'))
-    ticket_number = models.CharField(_('ticket number'), max_length=50)
+    ticket_number = models.PositiveIntegerField(_('ticket number'))
     free = models.BooleanField(_('free'))
     voucher_number = models.IntegerField(
         _('voucher number'), null=True, blank=True)
@@ -60,11 +60,6 @@ class Ticket(models.Model):
         # Format name (e.g.: John Janette Johnson)
         if self.owner_name:
             self.owner_name = ' '.join(self.owner_name.strip().title().split())
-
-        # Format ticket number (e.g.: A 212)
-        if self.ticket_number:
-            self.ticket_number = ' '.join(
-                self.ticket_number.strip().upper().split())
 
         # Unique pair enforcement: ('event', 'voucher_number')
         if self.voucher_number is not None:
