@@ -79,7 +79,7 @@ class Ticket(models.Model):
 
 class Achievement(models.Model):
     event = models.ForeignKey('Event')
-    name = models.CharField(_('name'), max_length=30)
+    name = models.CharField(_('name'), max_length=60)
     description = models.CharField(
         _('description'), max_length=255, blank=True)
 
