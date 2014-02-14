@@ -100,3 +100,36 @@ class Achievement(models.Model):
         if self.description:
             self.description = ' '.join(
                 self.description.strip().lower().split()).capitalize()
+
+
+class Freeloader(models.Model):
+    GENDER_CHOICES = (
+        ('M', _('Male')),
+        ('F', _('Female')),
+        ('O', _('Other'))
+    )
+    event = models.ForeignKey('Event')
+    name = models.CharField(_('name'), max_length=60)
+    gender = models.CharField(
+        _('gender'), max_length=1, choices=GENDER_CHOICES)
+    year_of_birth = models.PositiveIntegerField(_('year of birth'))
+    notes = models.CharField(_('notes'), max_length=255, blank=True)
+    register_date = models.DateTimeField(_('register date'), auto_now_add=True)
+
+    class Meta:
+        verbose_name = _('freeloader')
+        verbose_name_plural = _('freeloaders')
+
+    def __unicode__(self):
+        return self.name
+
+    def clean(self):
+
+        # Format name (e.g.: Cristopher Walken)
+        if self.name:
+            self.name = ' '.join(self.name.strip().title().split())
+
+        # Format notes (e.g.: Free entrance for awesomeness)
+        if self.notes:
+            self.notes = ' '.join(
+                self.notes.strip().lower().split()).capitalize()
