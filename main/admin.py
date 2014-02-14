@@ -1,6 +1,5 @@
 from django.contrib import admin
 from main.models import *
-from main.forms import *
 
 
 class EventAdmin(admin.ModelAdmin):
@@ -10,7 +9,6 @@ class EventAdmin(admin.ModelAdmin):
 
 
 class TicketAdmin(admin.ModelAdmin):
-    form = TicketForm
     list_display = ('event', 'ticket_number', 'free', 'voucher_number',
                     'owner_name', 'owner_gender', 'owner_year_of_birth',
                     'notes', 'register_date')
