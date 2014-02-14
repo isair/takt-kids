@@ -78,7 +78,7 @@ class Ticket(models.Model):
 
 class Achievement(models.Model):
     event = models.ForeignKey('Event')
-    name = models.CharField(_('name'), max_length=60)
+    name = models.CharField(_('name'), max_length=80)
     description = models.CharField(
         _('description'), max_length=255, blank=True)
 
@@ -108,7 +108,7 @@ class Freeloader(models.Model):
         ('O', _('Other'))
     )
     event = models.ForeignKey('Event')
-    name = models.CharField(_('name'), max_length=80)
+    name = models.CharField(_('name'), max_length=60)
     gender = models.CharField(
         _('gender'), max_length=1, choices=GENDER_CHOICES)
     year_of_birth = models.PositiveIntegerField(_('year of birth'))
