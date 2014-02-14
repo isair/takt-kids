@@ -52,14 +52,15 @@ class Cosplayer(models.Model):
 
 class Vote(models.Model):
     voter = models.ForeignKey(Ticket)
-    votee = models.ForeignKey(Cosplayer)
+    contestant = models.ForeignKey(Cosplayer)
+    vote_date = models.DateTimeField(_('vote date'), auto_now_add=True)
 
     class Meta:
         verbose_name = _('vote')
         verbose_name_plural = _('votes')
 
     def __unicode__(self):
-        return _('%s\'s vote for %s') % (self.voter, self.votee)
+        return _('%s\'s vote for %s') % (self.voter, self.contestant)
 
     def clean(self):
         return
