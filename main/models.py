@@ -108,7 +108,7 @@ class Freeloader(models.Model):
         ('O', _('Other'))
     )
     event = models.ForeignKey('Event')
-    name = models.CharField(_('name'), max_length=60)
+    name = models.CharField(_('name'), max_length=80)
     gender = models.CharField(
         _('gender'), max_length=1, choices=GENDER_CHOICES)
     year_of_birth = models.PositiveIntegerField(_('year of birth'))
