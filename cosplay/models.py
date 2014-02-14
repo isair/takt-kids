@@ -48,3 +48,18 @@ class Cosplayer(models.Model):
                                                                    get_thumbnail(self.picture, '80x80', quality=99))
 
     picture_thumbnail.allow_tags = True
+
+
+class Vote(models.Model):
+    voter = models.ForeignKey(Ticket)
+    votee = models.ForeignKey(Cosplayer)
+
+    class Meta:
+        verbose_name = _('vote')
+        verbose_name_plural = _('votes')
+
+    def __unicode__(self):
+        return _('%s\'s vote for %s') % (self.voter, self.votee)
+
+    def clean(self):
+        return
