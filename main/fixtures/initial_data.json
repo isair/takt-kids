@@ -6,4 +6,516 @@
         "end_date": "2014-02-16T20:00:00Z",
         "start_date": "2014-02-15T08:00:00Z"
     }
+}, {
+    "pk": 1,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "1-Etkinliğe Her Iki Gün De Kat",
+        "description": "Etkinlikte her iki gün de achivment yaparak, iki gün de katılımcı olduğunuzu kanıtlayın."
+    }
+}, {
+    "pk": 2,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "2-İkon'La Çektirdiğim Bir Foto",
+        "description": "Batmobile ile beraber çektirdiğiniz bir fotoğrafı facebook, twitter gibi bir sosyal paylaşım ağında paylaştığınızı bize gösterin."
+    }
+}, {
+    "pk": 3,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "3-2 Tane Plastik Şişe Kapağı G",
+        "description": "2 adet mavi su şişesi kapağı bulun ve bize getirip teslim edin. kapakları nasıl bulacağınız sizin yaratıcılığınıza kalmış."
+    }
+}, {
+    "pk": 4,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "5-Anı Defterine Yazı Yazdım.",
+        "description": "Kontakt 4 anı defteri içine, hissettikleriniz veya buradaki tecrübeniz hakkında birkaç cümle not yazın."
+    }
+}, {
+    "pk": 5,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "6-Şehir Dışından Geldiğimi Kan",
+        "description": "Gelmek için kullandığınız vasıtanın bileti, yolda yediğiniz yemeğin fişi gibi somut bir kanıtla bize kontakt 4'e katı lmak iç in şehir dışı ndan geldiğinizi gösterin."
+    }
+}, {
+    "pk": 6,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "7 - Kontakt 1 Biletimi Gösterdim",
+        "description": "Kontakt 1 biletinizi yanınızda getirin ve bize gösterin."
+    }
+}, {
+    "pk": 7,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "8 - Kontakt 2 Biletimi Gösterdim",
+        "description": "Kontakt 2 biletinizi yanınızda getirin ve bize gösterin."
+    }
+}, {
+    "pk": 8,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "9 - Kontakt 3 Biletimi Gösterdim",
+        "description": "Kontakt 3 biletinizi yanınızda getirin ve bize gösterin."
+    }
+}, {
+    "pk": 9,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "10 - Anne, Baba Veya Çocuğumla G",
+        "description": "Anne, baba veya çocuğunuzu, kimliklerinizle beraber achivement standına getirin ve kanıtlayın."
+    }
+}, {
+    "pk": 10,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "11 - Kontakt'a Ayakkabı Bağcığım",
+        "description": "Tokanızdan pantolonunuza, çorabınızdan ayakkabı bağcığınıza kadar dışarıdan görünen her kıyafetinizin aynı renk olması gerekmektedir."
+    }
+}, {
+    "pk": 11,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "4-Foursquare'de Yer Bildirimi",
+        "description": "Akıllı telefonunuz veya tabletinizle kontakt 4'te foursquare'de yer bildirimi veya facebook'da check-in yaptığınızı gösterin."
+    }
+}, {
+    "pk": 12,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "12-Kontakt 4 Etkinlik Linkini",
+        "description": "Facebook, twitter gibi bir sosyal paylaşım ağında Kontakt 4 etkinlik linkini paylaşmış olduğunuzu gösterin."
+    }
+}, {
+    "pk": 13,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "13-Tüm Alan Oyunlarına Katıldı",
+        "description": "Assasin, hazine avı, en az bir kutu oyunu, magic: the gathering, arcade oyunlarından oynayın ve bu achivementların hepsini aldığınızı gösterin."
+    }
+}, {
+    "pk": 14,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "14-Penguen Standından Imza Ald",
+        "description": "Penguen standına uğrayıp en az bir yazar/çizer imzası alıp gösterin."
+    }
+}, {
+    "pk": 15,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "15-Devrim Kunter'den Imza Aldı",
+        "description": "Seyfettin efendi standı na uğrayıp devrim kunter'in imzasını alıp gösterin."
+    }
+}, {
+    "pk": 16,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "16-Bütün Rare Kartları Tamamla",
+        "description": "Bütün rare achivement kartlarını tamamladığınızı gösterin."
+    }
+}, {
+    "pk": 17,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "17- Bütün Uncommon Kartları Ta",
+        "description": "Bütün uncommon achivement kartlarını tamamladığınızı gösterin."
+    }
+}, {
+    "pk": 18,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "18-Bütün Common Kartları Tamam",
+        "description": "Bütün common achivement kartlarını tamamladığınızı gösterin."
+    }
+}, {
+    "pk": 19,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "19-Bütün Kartları Tamamladım.",
+        "description": "Achivement kartlarının tamamını, ilk karttan son karta kadar tamamladığınızı gösterin."
+    }
+}, {
+    "pk": 20,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "20-Cosplay Yarışmasına Oy Verd",
+        "description": "Yarışmaya oy verdiğinizde ve yarışma sonuçları açıklandığında achivementınız otomatik olarak sisteme girer."
+    }
+}, {
+    "pk": 21,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "21-Bir Crossplay Yaptım.",
+        "description": "Karşı cinsinize ait bir cosplay yaptığınızı gösterin."
+    }
+}, {
+    "pk": 22,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "22-Gerçek Bir Insanın Cosplayi",
+        "description": "Marilyn monroe, micheal jackson, johnny depp vb. gerçek insanların cosplayini yaptığınızı gösterin. hayır kendi cosplayinizi yapmış sayılmazsınız. hayır arkadaşınızın kıyafetini giyerek onun cosplayini yapmış da sayılmazsınız."
+    }
+}, {
+    "pk": 23,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "23-Çizgiroman Karakteri Cospla",
+        "description": "Batman, black widow, superman, iron man vb. çizgiroman karakteri cosplayini yaptığınızı gösterin."
+    }
+}, {
+    "pk": 24,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "24-Anime/Manga Karakteri Cospl",
+        "description": "Naruto, luffy, lucy(nyuu), misa misa vb. anime/manga karakteri cosplayini yaptığınızı gösterin."
+    }
+}, {
+    "pk": 25,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "25-Oyun Karakteri Cosplayi Yap",
+        "description": "Gordon freeman, lara croft, katarina, lux, link vb. bir oyun karakteri cosplayini yaptığınızı gösterin."
+    }
+}, {
+    "pk": 26,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "26-Film/Dizi Karkteri Cosplayi",
+        "description": "Hannibal lecter, doctor who, padme amidala vb. film karkteri cosplayini yaptığınızı gösterin."
+    }
+}, {
+    "pk": 27,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "27-En Az 3 Arkadaş Grup Cospla",
+        "description": "Aynı film, anime, manga, oyun veya çizgiromandan yapılmış, farklı karakterlerden oluşan en az 3 kişilik cosplay grubunuzla standa gelip grubunuzu ve cosplaylerinizi gösterin. hayır 3 tane 11. doktor bir grup cosplayi değildir."
+    }
+}, {
+    "pk": 28,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "28-Assasin Oyununa Katıldım.",
+        "description": "Assasin'de katıldığınız session sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 29,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "29 - Assasin Oyununu Kazandım.",
+        "description": "Assasin'de oyunu kazanmanız durumunda katıldığınız session sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 30,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "30-Assasin Oyununda En Az Bir",
+        "description": "Assasin'de en az bir kişiyi öldürmeniz halinde katıldığınız session sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 31,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "31 - Hazine Avına Katıldım.",
+        "description": "Hazine avına katıldığınız session sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 32,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "32 - Hazine Avında Ilk Questi Ta",
+        "description": "Hazine avına katıldığınız ve ilk questi tamamladığınız taktirde session sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 33,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "33 - Hazine Avı nda Kazanan Takım",
+        "description": "Hazine avına katıldığınız ve kazanan takımda yer aldığınız taktirde session sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 34,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "34 - Hazine Avında Takımın En De",
+        "description": "Hazine avına katıldığınız ve session süresince en çok yanıtı verip, çözüme giden yolda en çok yardım eden kişi olup en değerli oyuncu seçilmeniz halinde session sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 35,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "35 - Magic: The Gathering Oynadı",
+        "description": "Magic: the gathering oynarken çekilmiş bir fotoğrafınızı gösterin."
+    }
+}, {
+    "pk": 36,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "36 - Warhammer Figürü Boyadım.",
+        "description": "Warhammer standında boyadığınız figürü gösterin."
+    }
+}, {
+    "pk": 37,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "37 - Arcade Oyunlarından En Az B ",
+        "description": "Arcade oyunlarından en az birini oynarken çekilmiş fotoğrafınızı gösterin."
+    }
+}, {
+    "pk": 38,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "38 - Larp'a Katıldım.",
+        "description": "Larp'a katıldığınız oyun sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 39,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "39 - Larp'a Master Larper Olarak",
+        "description": "Larp'a master larper olarak katıldığınız oyun sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 40,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "40 - Larp Oyunuma Zamanında Geld",
+        "description": "Larp'a zamanında katıldığınız oyun sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 41,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "41-Larp Oyunuma Kostümümle Gel",
+        "description": "Larp'a kostümünüzle katıldığınız oyun sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 42,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "42 - Larp Karakter Kağıdımın Üze",
+        "description": "Larp'a katıldığınız oyunun karakter kağıdının üzerine resim çizip gm/st/dm'inize gösterdiğiniz taktirde oyununuz sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 43,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "43 - Larp Karakter Kağıdımın Fot",
+        "description": "Larp'a katıldığınız oyunun karakter kağıdınızın fotoğrafını bir sosyal paylaşım ağında paylaşıp gm/st/dm'inize gösterdiğiniz taktirde oyununuz sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 44,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "44 - Frp Oynadım.",
+        "description": "Frp oynadığınız oyun sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 45,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "45 - Frp Oyunuma Kendi Zarlarımla",
+        "description": "Kendi zarlarınızı getirdiğiniz frp oyunu sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 46,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "46 - Frp Oyunuma Zamanında Geldi",
+        "description": "Zamanı nda geldiğ iniz frp oyunu sona erdiğ inde achivementı nı z sisteme girilecektir."
+    }
+}, {
+    "pk": 47,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "47 - Frp Oyunumdaki Karakterime",
+        "description": "Karakterinize uygun giyindiğiniz veya aksesuar getirdiğiniz frp oyunu sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 48,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "48 - Frp Karakter Kağıdımın Üzer",
+        "description": "Frp oyununuzun karakter kağıdının üzerine resim çizip gm/st/dm'inize gösterdiğiniz taktirde oyununuz sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 49,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "49-Frp Karakter Kağıdımın Foto",
+        "description": "Frp oyununuzun karakter kağıdının fotoğrafını bir sosyal paylaşım ağında paylaşıp gm/st/dm'inize gösterdiğiniz taktirde oyununuz sona erdiğinde achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 50,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "50 - Frp Oyunumun Sonuna Kadar O",
+        "description": "Frp oynadığınız oyun sona erdiğinde hala oyun masasındaysanız achivementınız sisteme girilecektir."
+    }
+}, {
+    "pk": 51,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "51 - Birden Fazla Frp / Larp Oyunu",
+        "description": "Kontakt 4 boyunca 1 larp 1 frp, 2 larp veya 2 frp oynayanlar alıyor."
+    }
+}, {
+    "pk": 52,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "52 - Anadolu Hikaye Anlatıcıları ",
+        "description": "Anadolu hikaye anlatıcıları standından alacağınız karakter kağıdınızı doldurup bize getirin ve gösterin."
+    }
+}, {
+    "pk": 53,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "53 - Anadolu Hikaye Anlatıcıları",
+        "description": "Anadolu hikaye anlatıcıları standındaki qr kodu kullanarak facebook'daki sayfalarını beğendiğinizi gösterin."
+    }
+}, {
+    "pk": 54,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "54-En Az Bir Workshop'a Katıld",
+        "description": "En az bir workshop'a katılıp ilgili kartı aldıktan sonra achivement masasına aldığınız kartı gösterin."
+    }
+}, {
+    "pk": 55,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "55-En Az Bir Seminere Katıldım",
+        "description": "En az bir seminere katılıp ilgili kartı aldıktan sonra achivement masasına aldığınız kartı gösterin."
+    }
+}, {
+    "pk": 56,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "56-En Az Bir Turnuvaya Katıldı",
+        "description": "En az bir turnuvaya katılıp ilgili kartı aldıktan sonra achivement masasına aldığınız kartı gösterin."
+    }
+}, {
+    "pk": 57,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "57-Market Place'den 10Tl Ve Üz",
+        "description": "Market place'den 10tl ve üzeri alışveriş yapıp ilgili kartı aldıktan sonra achivement masasına aldığınız kartı gösterin."
+    }
+}, {
+    "pk": 58,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "58-Görev İptal-Karti Yok",
+        "description": "Görev iptal-karti yok"
+    }
+}, {
+    "pk": 59,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "59-Baykuş Standındaki Anketi D",
+        "description": "Standa uğrayıp ilgili stand kartını aldıktan sonra achivement masasına aldığınız kartı gösterin."
+    }
+}, {
+    "pk": 60,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "60-Gerekli Şeyler Standına Uğr",
+        "description": "Standa uğrayıp ilgili stand kartını aldıktan sonra achivement masasına aldığınız kartı gösterin."
+    }
+}, {
+    "pk": 61,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "61-Marmara Çizgi Çizgi Düşler",
+        "description": "Standa uğrayıp ilgili stand kartını aldıktan sonra achivement masasına aldığınız kartı gösterin."
+    }
+}, {
+    "pk": 62,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "62-Sancak Beyi Standına Uğradı",
+        "description": "Standa uğrayıp ilgili stand kartını aldıktan sonra achivement masasına aldığınız kartı gösterin."
+    }
+}, {
+    "pk": 63,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "63-Mstar Oyununda Belirli Bir",
+        "description": "Standda belirtilen puanı geçtiğinizde verilen kartı gösterin."
+    }
+}, {
+    "pk": 64,
+    "model": "main.achievement",
+    "fields": {
+        "event": 1,
+        "name": "64-Bogami Kutu Oyunlardan En A",
+        "description": "Bogami kutu oyunlardan en az birini oynadığınızda verilen kartı gösterin."
+    }
 }]
