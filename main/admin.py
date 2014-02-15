@@ -37,8 +37,25 @@ class FreeloaderAdmin(admin.ModelAdmin):
     list_filter = ('event', 'gender', 'register_date')
     ordering = ('-register_date', )
 
+
+class LogAdmin(admin.ModelAdmin):
+
+    list_display = ('action_time', 'user', 'content_type',
+                    'change_message', 'is_addition', 'is_change', 'is_deletion')
+    list_filter = ['action_time', 'user', 'content_type']
+    ordering = ('-action_time',)
+
+    def has_add_permission(self, request):
+        return False
+
+    def has_change_permission(self, request, obj=None):
+        return True
+
+    def has_delete_permission(self, request, obj=None):
+        return False
+
 admin.site.register(Event, EventAdmin)
 admin.site.register(Ticket, TicketAdmin)
 admin.site.register(Achievement, AchievementAdmin)
 admin.site.register(Freeloader, FreeloaderAdmin)
-admin.site.register(LogEntry)
+admin.site.register(LogEntry, LogAdmin)
