@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.contrib.admin.models import LogEntry
 from main.models import *
 
 
@@ -40,3 +41,4 @@ admin.site.register(Event, EventAdmin)
 admin.site.register(Ticket, TicketAdmin)
 admin.site.register(Achievement, AchievementAdmin)
 admin.site.register(Freeloader, FreeloaderAdmin)
+admin.site.register(LogEntry)
