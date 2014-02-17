@@ -2,14 +2,16 @@ from django.contrib import admin
 from django.contrib.admin.models import LogEntry
 from main.models import *
 
+import reversion
 
-class EventAdmin(admin.ModelAdmin):
+
+class EventAdmin(reversion.VersionAdmin):
     list_display = ('name', 'start_date', 'end_date')
     search_fields = ('name', 'start_date', 'end_date')
     ordering = ('-start_date', )
 
 
-class TicketAdmin(admin.ModelAdmin):
+class TicketAdmin(reversion.VersionAdmin):
     list_display = ('event', 'ticket_number', 'free', 'voucher_number',
                     'owner_name', 'owner_gender', 'owner_year_of_birth',
                     'notes', 'register_date')
@@ -21,7 +23,7 @@ class TicketAdmin(admin.ModelAdmin):
     ordering = ('-register_date', )
 
 
-class AchievementAdmin(admin.ModelAdmin):
+class AchievementAdmin(reversion.VersionAdmin):
     list_display = ('event', 'name', 'description')
     list_display_links = ('name', )
     search_fields = ('name', 'description')
@@ -29,7 +31,7 @@ class AchievementAdmin(admin.ModelAdmin):
     ordering = ('-id', )
 
 
-class FreeloaderAdmin(admin.ModelAdmin):
+class FreeloaderAdmin(reversion.VersionAdmin):
     list_display = ('event', 'name', 'gender',
                     'year_of_birth', 'notes', 'register_date')
     list_display_links = ('name', )
@@ -41,7 +43,8 @@ class FreeloaderAdmin(admin.ModelAdmin):
 class LogAdmin(admin.ModelAdmin):
 
     list_display = ('action_time', 'user', 'content_type',
-                    'change_message', 'is_addition', 'is_change', 'is_deletion')
+                    'change_message', 'is_addition', 'is_change',
+                    'is_deletion')
     list_filter = ['action_time', 'user', 'content_type']
     ordering = ('-action_time',)
 
