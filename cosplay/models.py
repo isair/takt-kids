@@ -44,10 +44,8 @@ class Cosplayer(models.Model):
     def picture_thumbnail(self):
 
         if self.picture:
-            str = '<img src="%s/%s/%s" width="80" height="80" />'
-            return str % (settings.MEDIA_URL[:-1],
-                          self.register_date,
-                          get_thumbnail(self.picture, '80x80', quality=99))
+            return '<img src="%s/%s" width="80" height="80" />' % (settings.MEDIA_URL[:-1],
+                                                                   get_thumbnail(self.picture, '80x80', quality=99))
 
     picture_thumbnail.allow_tags = True
 
