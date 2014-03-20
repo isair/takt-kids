@@ -1,5 +1,3 @@
-KONTAKT Information Distribution System
-=========
 # Introduction
 KIDS is the web based system which handles the ticket sales, achievement tracking, cosplay contest management, and many more aspects of the biggest subculture event (as of this writing) in Turkey.
 
@@ -9,7 +7,7 @@ After cloning this repo, you need to set the following environment variables on 
 * AWS_ACCESS_KEY_ID
 * AWS_SECRET_ACCESS_KEY
 
-These variables are your amazon web services access key id and secret access key respectively as their names suggest. After setting them, change the **AWS_STORAGE_BUCKET_NAME** variable in *settings.py* to the name of your own bucket then run a *collectstatic* command like this in the project directory:
+These variables are your amazon web services access key id and secret access key respectively as their names suggest. After setting them, change the **AWS_STORAGE_BUCKET_NAME** variable in *settings.py* to the name of your own bucket then run a *collectstatic* command like this inside the project directory:
 
 ```
 python manage.py collectstatic
