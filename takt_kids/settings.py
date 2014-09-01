@@ -98,7 +98,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 if DEBUG:
+    STATIC_ROOT = 'staticfiles'
     STATIC_URL = '/static/'
+
+    MEDIA_ROOT = 'mediafiles'
+    MEDIA_URL = '/media/'
 else:
     DEFAULT_S3_PATH = 'media'
     STATIC_S3_PATH = 'static'
