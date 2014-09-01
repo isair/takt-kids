@@ -20,7 +20,7 @@ Make sure you have all the requirements installed on your machine, then clone th
 virtualenv .env
 source .env/bin/activate
 pip install -r requirements.txt
-python manage.py syncdb
+python manage.py migrate
 python manage.py runserver 0.0.0.0:8000
 ``` 
 
