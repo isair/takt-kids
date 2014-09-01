@@ -25,11 +25,16 @@ TEMPLATE_CONTEXT_PROCESSORS = TCP + (
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get('KIDS_DEBUG', 'true'))
+DEBUG = os.environ.get('KIDS_DEBUG', 'true').lower() in ('true')
 
-TEMPLATE_DEBUG = bool(os.environ.get('KIDS_DEBUG', 'true'))
+TEMPLATE_DEBUG = os.environ.get('KIDS_DEBUG', 'true').lower() in ('true')
 
 ALLOWED_HOSTS = ['*']
+
+if DEBUG:
+    print "Debug mode is on"
+else:
+    print "Debug mode is off"
 
 # SECURITY WARNING: keep the secret key used in production secret!
 if DEBUG:
