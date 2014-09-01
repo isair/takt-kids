@@ -24,9 +24,6 @@ TEMPLATE_CONTEXT_PROCESSORS = TCP + (
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '%g$7*j1f6^dd@m6o!e&bxfj&yoh6jk8ho$_zhzz8ptqp48gmyd'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -34,9 +31,10 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = '%g$7*j1f6^dd@m6o!e&bxfj&yoh6jk8ho$_zhzz8ptqp48gmyd'
 
 # Application definition
-
 INSTALLED_APPS = (
     'grappelli',
     'django.contrib.admin',
@@ -69,7 +67,6 @@ ROOT_URLCONF = 'takt_kids.urls'
 
 WSGI_APPLICATION = 'takt_kids.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
@@ -91,25 +88,27 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-DEFAULT_S3_PATH = 'media'
-STATIC_S3_PATH = 'static'
+if DEBUG:
+    STATIC_URL = '/static/'
+else:
+    DEFAULT_S3_PATH = 'media'
+    STATIC_S3_PATH = 'static'
 
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = 'takt-kids'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_STORAGE_BUCKET_NAME = 'takt-kids'
 
-STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
-DEFAULT_FILE_STORAGE = 's3_folder_storage.s3.DefaultStorage'
+    STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
+    DEFAULT_FILE_STORAGE = 's3_folder_storage.s3.DefaultStorage'
 
-STATIC_ROOT = '/%s/' % STATIC_S3_PATH
-STATIC_URL = '//%s.s3.amazonaws.com/static/' % AWS_STORAGE_BUCKET_NAME
+    STATIC_ROOT = '/%s/' % STATIC_S3_PATH
+    STATIC_URL = '//%s.s3.amazonaws.com/static/' % AWS_STORAGE_BUCKET_NAME
 
-MEDIA_ROOT = '/%s/' % DEFAULT_S3_PATH
-MEDIA_URL = '//%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
+    MEDIA_ROOT = '/%s/' % DEFAULT_S3_PATH
+    MEDIA_URL = '//%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
 
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
@@ -127,8 +126,6 @@ APPEND_SLASH = True
 GRAPPELLI_ADMIN_TITLE = 'TAKT - KIDS'
 
 # Cache configuration
-
-
 def get_cache():
     try:
         os.environ['MEMCACHE_SERVERS'] = os.environ[
