@@ -1,10 +1,11 @@
-Django==1.6.6
+--allow-all-external
+--allow-unverified django-evolution
+git+https://github.com/django/django.git@1.7c3
 Pillow==2.5.3
 boto==2.32.1
 dj-database-url==0.3.0
 dj-static==0.0.6
 django-easy-select2==1.2.7
-django-evolution==0.7.3
 django-grappelli==2.5.3
 django-pylibmc-sasl==0.2.4
 django-report-builder==2.0.1
@@ -20,6 +21,6 @@ psycopg2==2.5.4
 pylibmc==1.2.3
 python-dateutil==2.2
 six==1.7.3
-sorl-thumbnail==11.12
+sorl-thumbnail==11.12.1b
 static3==0.5.1
 wsgiref==0.1.2

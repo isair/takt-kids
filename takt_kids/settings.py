@@ -56,7 +56,6 @@ INSTALLED_APPS = (
     's3_folder_storage',
     'sorl.thumbnail',
     'easy_select2',
-    'django_evolution',
     'reversion',
     'report_builder',
     'main',
