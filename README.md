@@ -1,26 +1,27 @@
-# Introduction
-KIDS is the web based system which handles the ticket sales, achievement tracking, cosplay contest management, and many more aspects of the biggest subculture event (as of this writing) in Turkey.
+Introduction
+--------------
 
-# Setup
-After cloning this repo, you need to set the following environment variables on your local machine:
+K.I.D.S. is the web based system which handles the ticket sales, achievement tracking, cosplay contest management, and many more aspects of the biggest subculture event (as of this writing) in Turkey. It stands for __KONTAKT Information Distribution System__.
 
-* AWS_ACCESS_KEY_ID
-* AWS_SECRET_ACCESS_KEY
+Quick Start
+--------------
 
-These variables are your amazon web services access key id and secret access key respectively as their names suggest. After setting them, change the **AWS_STORAGE_BUCKET_NAME** variable in *settings.py* to the name of your own bucket then run a *collectstatic* command like this inside the project directory:
+If you have a Mac yet don't have [Homebrew](http://brew.sh) installed, go ahead and install that on your system first. It will make the installation of any missing requirements way easier.
+
+Requirements:
+* Python 2.7 (On Mac: _brew install python_)
+* PostgreSQL (On Mac: _brew install postgresql_)
+* libMemcached (On Mac: _brew install libmemcached_)
+* virtualenv (_pip install virtualenv_)
+
+Make sure you have all the requirements installed on your machine, then clone this repository. Next, open a terminal and cd into the project directory. Enter the following lines in their given order.
 
 ```
-python manage.py collectstatic
-```
-
-You should also install the required python packages using:
-
-```
+virtualenv .env
+source .env/bin/activate
 pip install -r requirements.txt
-```
-
-Installing them in a virtual environment is recommended but not required. Finally, you can run the server on your local machine with the following command:
-
-```
+python manage.py syncdb
 python manage.py runserver 0.0.0.0:8000
-```
+``` 
+
+Congratulations! You now have a K.I.D.S. server running on your local machine! To stop the server just press __CTRl-C__.
