@@ -32,7 +32,10 @@ TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '%g$7*j1f6^dd@m6o!e&bxfj&yoh6jk8ho$_zhzz8ptqp48gmyd'
+if DEBUG:
+    SECRET_KEY = '%g$7*j1f6^dd@m6o!e&bxfj&yoh6jk8ho$_zhzz8ptqp48gmyd'
+else:
+    SECRET_KEY = os.environ.get('KIDS_SECRET_KEY')
 
 # Application definition
 INSTALLED_APPS = (
