@@ -24,4 +24,4 @@ python manage.py syncdb
 python manage.py runserver 0.0.0.0:8000
 ``` 
 
-Congratulations! You now have a K.I.D.S. server running on your local machine! To stop the server just press __CTRl-C__.
+Congratulations! You now have a K.I.D.S. server running on your local machine! To stop the server just press __CTRL-C__.
