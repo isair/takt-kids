@@ -25,9 +25,9 @@ TEMPLATE_CONTEXT_PROCESSORS = TCP + (
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(os.environ.get('KIDS_DEBUG', 'true'))
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = bool(os.environ.get('KIDS_DEBUG', 'true'))
 
 ALLOWED_HOSTS = ['*']
 
