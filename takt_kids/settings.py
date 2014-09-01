@@ -72,7 +72,6 @@ WSGI_APPLICATION = 'takt_kids.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
-
 DATABASES = {
     'default': dj_database_url.config(
         default='sqlite:////' + BASE_DIR + '/db.sqlite3')
@@ -80,7 +79,6 @@ DATABASES = {
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Europe/Istanbul'
@@ -93,15 +91,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-
 if DEBUG:
     STATIC_URL = '/static/'
 else:
     DEFAULT_S3_PATH = 'media'
     STATIC_S3_PATH = 'static'
 
-    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_ACCESS_KEY_ID = os.environ.get('KIDS_AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('KIDS_AWS_SECRET_ACCESS_KEY')
     AWS_STORAGE_BUCKET_NAME = 'takt-kids'
 
     STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
