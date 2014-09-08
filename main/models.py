@@ -4,6 +4,8 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.core.exceptions import ValidationError
 
+import datetime
+
 
 class Event(models.Model):
     name = models.CharField(_('name'), max_length=255, unique=True)
@@ -23,6 +25,16 @@ class Event(models.Model):
         if self.name:
             self.name = ' '.join(self.name.strip().title().split())
 
+def get_current_event():
+    now = datetime.date.today()
+
+    try:
+        event = Event.objects.get(start_date__lte=now, end_date__gte=now)
+    except Event.DoesNotExist:
+        return None
+
+    return event
+
 
 class Ticket(models.Model):
     GENDER_CHOICES = (
@@ -30,7 +42,7 @@ class Ticket(models.Model):
         ('F', _('Female')),
         ('O', _('Other'))
     )
-    event = models.ForeignKey('Event')
+    event = models.ForeignKey('Event', default=get_current_event)
     owner_name = models.CharField(_('owner name'), max_length=60)
     owner_gender = models.CharField(
         _('owner gender'), max_length=1, choices=GENDER_CHOICES)
@@ -57,6 +69,14 @@ class Ticket(models.Model):
 
     def clean(self):
 
+        # Force event to be current event.
+        current_event = get_current_event()
+
+        if current_event is None:
+            raise ValidationError(_('There are no events going on right now.'))
+        else:
+            self.event = current_event
+
         # Format name (e.g.: John Janette Johnson)
         if self.owner_name:
             self.owner_name = ' '.join(self.owner_name.strip().title().split())
@@ -71,9 +91,9 @@ class Ticket(models.Model):
                 id=self.id).filter(
                 voucher_number=self.voucher_number).filter(
                 event=self.event)
+
             if queryset.exists():
-                raise ValidationError(
-                    _('This voucher name is already used at this event.'))
+                raise ValidationError(_('This voucher name is already used at this event.'))
 
 
 class Achievement(models.Model):
@@ -107,7 +127,7 @@ class Freeloader(models.Model):
         ('F', _('Female')),
         ('O', _('Other'))
     )
-    event = models.ForeignKey('Event')
+    event = models.ForeignKey('Event', default=get_current_event)
     name = models.CharField(_('name'), max_length=60)
     gender = models.CharField(
         _('gender'), max_length=1, choices=GENDER_CHOICES)
@@ -123,6 +143,14 @@ class Freeloader(models.Model):
         return self.name
 
     def clean(self):
+
+        # Force event to be current event.
+        current_event = get_current_event()
+
+        if current_event is None:
+            raise ValidationError(_('There are no events going on right now.'))
+        else:
+            self.event = current_event
 
         # Format name (e.g.: Cristopher Walken)
         if self.name:
