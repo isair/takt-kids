@@ -1,17 +1,17 @@
 --allow-all-external
---allow-unverified django-evolution
 git+https://github.com/django/django.git@1.7c3
 Pillow==2.5.3
 boto==2.32.1
 dj-database-url==0.3.0
 dj-static==0.0.6
 django-easy-select2==1.2.7
-django-grappelli==2.5.3
+git+https://github.com/sehmaschine/django-grappelli.git@dev/2.6.x#egg=django-grapelli
 django-pylibmc-sasl==0.2.4
 django-report-builder==2.0.1
 django-report-utils==0.2.6
 django-reversion==1.8.2
 django-s3-folder-storage==0.2
+django-social-auth==0.7.28
 django-storages==1.1.8
 gunicorn==19.1.1
 jdcal==1.0
