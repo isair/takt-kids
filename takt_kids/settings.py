@@ -58,6 +58,7 @@ INSTALLED_APPS = (
     'easy_select2',
     'reversion',
     'report_builder',
+    'social_auth',
     'main',
     'cosplay',
 )
@@ -157,3 +158,16 @@ def get_cache():
         }
 
 CACHES = get_cache()
+
+#Social auth configuration
+AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.facebook.FacebookBackend',
+    'django.contrib.auth.backends.ModelBackend'
+)
+
+FACEBOOK_APP_ID = os.environ.get('KIDS_FACEBOOK_APP_ID')
+FACEBOOK_API_SECRET = os.environ.get('KIDS_FACEBOOK_API_SECRET')
+FACEBOOK_EXTENDED_PERMISSIONS = ['email']
+
+SOCIAL_AUTH_USERNAME_IS_FULL_EMAIL = True
+SOCIAL_AUTH_PROTECTED_USER_FIELDS = ['username', 'email']
