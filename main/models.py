@@ -48,7 +48,7 @@ class Ticket(models.Model):
         _('owner gender'), max_length=1, choices=GENDER_CHOICES)
     owner_year_of_birth = models.PositiveIntegerField(_('year of birth'))
     ticket_number = models.PositiveIntegerField(_('ticket number'))
-    free = models.BooleanField(_('free'))
+    free = models.BooleanField(_('free'), default=False)
     voucher_number = models.IntegerField(
         _('voucher number'), null=True, blank=True)
     notes = models.CharField(_('notes'), max_length=255, blank=True)
