@@ -1,5 +1,5 @@
 --allow-all-external
-git+https://github.com/django/django.git@1.7c3
+django>=1.7
 Pillow==2.5.3
 boto==2.32.1
 dj-database-url==0.3.0
