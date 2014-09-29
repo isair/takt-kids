@@ -6,7 +6,6 @@ dj-database-url==0.3.0
 dj-static==0.0.6
 django-easy-select2==1.2.7
 git+https://github.com/sehmaschine/django-grappelli.git@dev/2.6.x#egg=django-grapelli
-django-pylibmc-sasl==0.2.4
 django-report-builder==2.0.1
 django-report-utils==0.2.6
 django-reversion==1.8.2
@@ -18,7 +17,6 @@ jdcal==1.0
 openpyxl==2.0.5
 pip-tools==0.3.5
 psycopg2==2.5.4
-pylibmc==1.2.3
 python-dateutil==2.2
 six==1.7.3
 sorl-thumbnail==11.12.1b
