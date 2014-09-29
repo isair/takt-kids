@@ -16,7 +16,10 @@ from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-# Required for Django suit.
+# Template directories
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'), )
+
+# Required for Django suit
 TEMPLATE_CONTEXT_PROCESSORS = TCP + (
     'django.core.context_processors.request',
 )
