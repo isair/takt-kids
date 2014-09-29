@@ -11,17 +11,17 @@ If you have a Mac yet don't have [Homebrew](http://brew.sh) installed, go ahead 
 Requirements:
 * Python 2.7 (On Mac: _brew install python_)
 * PostgreSQL (On Mac: _brew install postgresql_)
-* libMemcached (On Mac: _brew install libmemcached_)
 * virtualenv (_pip install virtualenv_)
 
 Make sure you have all the requirements installed on your machine, then clone this repository. Next, open a terminal and cd into the project directory. Enter the following lines in their given order.
 
 ```
-virtualenv .env
-source .env/bin/activate
+virtualenv venv
+source venv/bin/activate
 pip install -r requirements.txt
 python manage.py migrate
+python manage.py createsuperuser
 python manage.py runserver 0.0.0.0:8000
-``` 
+```
 
 Congratulations! You now have a K.I.D.S. server running on your local machine! To stop the server just press __CTRL-C__.
