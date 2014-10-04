@@ -144,9 +144,17 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend'
 )
 
-FACEBOOK_APP_ID = os.environ.get('KIDS_FACEBOOK_APP_ID')
-FACEBOOK_API_SECRET = os.environ.get('KIDS_FACEBOOK_API_SECRET')
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+
+if DEBUG:
+    FACEBOOK_APP_ID = '284445315088366'
+    FACEBOOK_API_SECRET = '702f4b84d9985756856b48d198e8ce4f'
+else:
+    FACEBOOK_APP_ID = os.environ.get('KIDS_FACEBOOK_APP_ID')
+    FACEBOOK_API_SECRET = os.environ.get('KIDS_FACEBOOK_API_SECRET')
 FACEBOOK_EXTENDED_PERMISSIONS = ['email']
 
 SOCIAL_AUTH_USERNAME_IS_FULL_EMAIL = True
 SOCIAL_AUTH_PROTECTED_USER_FIELDS = ['username', 'email']
+
+LOGIN_REDIRECT_URL = '/'

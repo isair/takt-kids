@@ -46,7 +46,7 @@
                     {% endif %}
 
                     <div class="grp-row">
-                        <input type="button" class="grp-button grp-default" value="Log in with Facebook" style="width:100%;font-size:18px;height:30px" />
+                        <a href="{% url 'socialauth_begin' 'facebook' %}" class="grp-button grp-default" style="width:100%;font-size:18px;height:30px;text-align:center">Log in with Facebook</a>
                     </div>
 
                     <div class="grp-row{% if form.username.errors %} grp-errors{% endif %}">
