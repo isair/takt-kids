@@ -60,7 +60,6 @@ INSTALLED_APPS = (
     'sorl.thumbnail',
     'easy_select2',
     'reversion',
-    'report_builder',
     'social_auth',
     'main',
     'cosplay',
