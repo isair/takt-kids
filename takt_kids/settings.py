@@ -62,6 +62,7 @@ INSTALLED_APPS = (
     'reversion',
     'social_auth',
     'main',
+    'reception',
     'cosplay',
 )
 
@@ -156,4 +157,4 @@ FACEBOOK_EXTENDED_PERMISSIONS = ['email']
 SOCIAL_AUTH_USERNAME_IS_FULL_EMAIL = True
 SOCIAL_AUTH_PROTECTED_USER_FIELDS = ['username', 'email']
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/reception'
