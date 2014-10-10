@@ -34,21 +34,6 @@ class Migration(migrations.Migration):
             bases=(models.Model,),
         ),
         migrations.CreateModel(
-            name='JuryVote',
-            fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('vote_points', models.IntegerField(verbose_name='points')),
-                ('vote_date', models.DateTimeField(auto_now_add=True, verbose_name='vote date')),
-                ('contestant', models.ForeignKey(to='cosplay.Cosplayer')),
-                ('jury_member', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
-            ],
-            options={
-                'verbose_name': 'jury vote',
-                'verbose_name_plural': 'jury votes',
-            },
-            bases=(models.Model,),
-        ),
-        migrations.CreateModel(
             name='Vote',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
@@ -61,9 +46,5 @@ class Migration(migrations.Migration):
                 'verbose_name_plural': 'votes',
             },
             bases=(models.Model,),
-        ),
-        migrations.AlterUniqueTogether(
-            name='vote',
-            unique_together=set([('voter', 'contestant')]),
         ),
     ]
