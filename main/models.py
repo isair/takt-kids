@@ -77,10 +77,11 @@ class Ticket(models.Model):
         else:
             self.event = current_event
 
-        # Format name (e.g.: John Janette Johnson)
+        # Format owner name (e.g.: John Janette Johnson)
         if self.owner_name:
             self.owner_name = ' '.join(self.owner_name.strip().title().split())
 
+        # Voucher number formatting and checks.
         if self.voucher_number is not None:
 
             # If there is a voucher number, make sure this is a free ticket
@@ -94,6 +95,11 @@ class Ticket(models.Model):
 
             if queryset.exists():
                 raise ValidationError(_('This voucher name is already used at this event.'))
+
+        # Format notes (e.g.: First one to come from China)
+        if self.notes:
+            self.notes = ' '.join(
+                self.notes.strip().lower().split()).capitalize()
 
 
 class Achievement(models.Model):
