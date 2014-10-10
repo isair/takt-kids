@@ -12,6 +12,7 @@ urlpatterns = patterns('',
 
                        url(r'^grappelli/', include('grappelli.urls')),
                        url(r'^reception/', include('reception.urls')),
+                       url(r'^cosplay/', include('cosplay.urls')),
                        url(r'', include('social_auth.urls')),
                        url(r'^', include(admin.site.urls)),
                        )
