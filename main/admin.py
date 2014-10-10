@@ -67,6 +67,7 @@ class LogAdmin(admin.ModelAdmin):
     def has_delete_permission(self, request, obj=None):
         return False
 
+
 admin.site.register(Event, EventAdmin)
 admin.site.register(Ticket, TicketAdmin)
 admin.site.register(Achievement, AchievementAdmin)
