@@ -90,8 +90,8 @@ class Ticket(models.Model):
             # Unique pair enforcement: ('event', 'voucher_number')
             queryset = Ticket.objects.exclude(
                 id=self.id).filter(
-                voucher_number=self.voucher_number).filter(
-                event=self.event)
+                    voucher_number=self.voucher_number).filter(
+                        event=self.event)
 
             if queryset.exists():
                 raise ValidationError(_('This voucher name is already used at this event.'))
