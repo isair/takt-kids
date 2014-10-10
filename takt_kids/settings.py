@@ -34,11 +34,6 @@ TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = ['*']
 
-if DEBUG:
-    print "Debug mode is on"
-else:
-    print "Debug mode is off"
-
 # SECURITY WARNING: keep the secret key used in production secret!
 if DEBUG:
     SECRET_KEY = '%g$7*j1f6^dd@m6o!e&bxfj&yoh6jk8ho$_zhzz8ptqp48gmyd'

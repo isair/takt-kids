@@ -21,10 +21,6 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('character_name', models.CharField(max_length=100, verbose_name='character name')),
-                ('costume_category', models.CharField(default='', max_length=1, null=True, choices=[('V', 'Video Game Character'), ('O', 'Original Character'), ('', 'Other')])),
-                ('made_own_costume', models.BooleanField(default=False, verbose_name='made own costume')),
-                ('email', models.EmailField(max_length=75, verbose_name='email', blank=True)),
-                ('phone_number', models.CharField(blank=True, max_length=15, validators=[django.core.validators.RegexValidator('^\\+?1?\\d{9,15}$', "Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.", 'Invalid Phone number'), django.core.validators.MaxLengthValidator(15)])),
                 ('picture', sorl.thumbnail.fields.ImageField(upload_to=cosplay.models.u_file_rename, blank=True)),
                 ('contest_number', models.IntegerField(null=True, blank=True)),
                 ('notes', models.CharField(max_length=512, verbose_name='notes', blank=True)),
