@@ -24,10 +24,11 @@ class TicketAdmin(reversion.VersionAdmin):
 
     def get_object(self, request, object_id):
         self.obj = super(TicketAdmin, self).get_object(request, object_id)
+
         return self.obj
 
     def formfield_for_manytomany(self, db_field, request, **kwargs):
-        if db_field.name == "achievements" or db_field.name == 'cards':
+        if (db_field.name == "achievements" or db_field.name == 'cards') and getattr(self, 'obj', None):
             kwargs['queryset'] = Achievement.objects.filter(event=self.obj.event)
         return super(TicketAdmin, self).formfield_for_manytomany(db_field, request, **kwargs)
 
