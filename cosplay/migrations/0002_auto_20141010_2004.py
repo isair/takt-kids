@@ -36,4 +36,9 @@ class Migration(migrations.Migration):
             field=models.CharField(blank=True, max_length=15, null=True, validators=[django.core.validators.RegexValidator('^\\+?1?\\d{9,15}$', "Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.", 'Invalid Phone number'), django.core.validators.MaxLengthValidator(15)]),
             preserve_default=True,
         ),
+        migrations.AlterField(
+            model_name='cosplayer',
+            name='notes',
+            field=models.CharField(max_length=512, verbose_name='notes', blank=True),
+        ),
     ]

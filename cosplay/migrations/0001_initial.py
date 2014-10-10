@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
                 ('character_name', models.CharField(max_length=100, verbose_name='character name')),
                 ('picture', sorl.thumbnail.fields.ImageField(upload_to=cosplay.models.u_file_rename, blank=True)),
                 ('contest_number', models.IntegerField(null=True, blank=True)),
-                ('notes', models.CharField(max_length=512, verbose_name='notes', blank=True)),
+                ('notes', models.CharField(max_length=255, verbose_name='notes', blank=True)),
                 ('register_date', models.DateTimeField(auto_now_add=True, verbose_name='register date')),
                 ('ticket', models.OneToOneField(to='main.Ticket')),
             ],
