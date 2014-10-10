@@ -22,6 +22,15 @@ class TicketAdmin(reversion.VersionAdmin):
     filter_horizontal = ('achievements', 'cards')
     ordering = ('-register_date', )
 
+    def get_object(self, request, object_id):
+        self.obj = super(TicketAdmin, self).get_object(request, object_id)
+        return self.obj
+
+    def formfield_for_manytomany(self, db_field, request, **kwargs):
+        if db_field.name == "achievements" or db_field.name == 'cards':
+            kwargs['queryset'] = Achievement.objects.filter(event=self.obj.event)
+        return super(TicketAdmin, self).formfield_for_manytomany(db_field, request, **kwargs)
+
 
 class AchievementAdmin(reversion.VersionAdmin):
     list_display = ('event', 'name', 'description')
