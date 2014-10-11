@@ -26,7 +26,7 @@
                 <div class="row clearfix">
                     <ol>
                     {% for jury_vote_average in jury_vote_averages %}
-                        <li>{{ jury_vote_average }}</li>
+                        <li>{{ jury_vote_average.1 }} - <strong>{{ jury_vote_average.0 }}</strong></li>
                     {% endfor %}
                     </ol>
                 </div>
