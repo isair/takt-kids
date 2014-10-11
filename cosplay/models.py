@@ -97,7 +97,7 @@ class JuryVote(models.Model):
         verbose_name_plural = _('jury votes')
 
     def __unicode__(self):
-        return _('%s\'s vote for %s') % (self.jury.first_name, self.contestant)
+        return _('%s\'s vote for %s') % (self.jury_member.first_name, self.contestant)
 
     def clean(self):
         return

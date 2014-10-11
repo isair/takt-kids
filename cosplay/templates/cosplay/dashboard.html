@@ -66,7 +66,7 @@
     {% if selected_cosplayer %}
         <div class="row clearfix">
             <div class="col-md-12 column">
-                <form action="/cosplay/juryvote/" method="post"> {% csrf_token %}
+                <form action="/cosplay/vote/jury/" method="post"> {% csrf_token %}
                     Points for <u>{{ selected_cosplayer.ticket.owner_name }}</u>:
                     <input type="hidden" name="selected_cosplayer" value="{{ selected_cosplayer.id }}">
                     <input type="number" name="vote_points" value="0" min="0" max="10">
@@ -80,7 +80,7 @@
         <div class="col-md-12 column">
             <h3><u>My Votes</u></h3>
             {% for jury_vote in jury_votes %}
-                {{ jury_vote.contestant }} - {{ jury_vote.vote_points }}
+                {{ jury_vote.contestant }} - {{ jury_vote.vote_points }} <br>
             {% endfor %}
         </div>
     </div>
