@@ -69,6 +69,11 @@ def juryvote(request):
         print('vote points not provided')
         return redirect('/cosplay/dashboard')
 
+    if vote_points < 0:
+        vote_points = 0
+    elif vote_points > 10:
+        vote_points = 10
+
     # Check if there is already a vote given to this contestant in this event.
     try:
         jury_vote = JuryVote.objects.get(jury_member=request.user, contestant=selected_cosplayer)
