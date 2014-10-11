@@ -24,9 +24,9 @@ class Cosplayer(models.Model):
     COSTUME_CATEGORIES = (
         ('V', 'Video Game Character'),
         ('O', 'Original Character'),
-        ('', 'Other')
+        ('X', 'Other')
     )
-    costume_category = models.CharField(default='', choices=COSTUME_CATEGORIES, max_length=1, null=True)
+    costume_category = models.CharField(default='X', choices=COSTUME_CATEGORIES, max_length=1, null=True)
     made_own_costume = models.BooleanField(_('made own costume'), default=False)
     email = models.EmailField(_('email'), null=True, blank=True)
     phone_number = models.CharField(max_length=15, null=True, blank=True,
