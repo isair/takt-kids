@@ -3,24 +3,18 @@ from django.shortcuts import render, redirect
 
 def login(request):
     if request.user.is_authenticated():
-        return redirect('/cosplay/wait')
+        return redirect('/reception')
 
     return render(request, 'cosplay/login.html')
-
-
-def wait(request):
-    if not request.user.is_authenticated():
-        return redirect('/cosplay/login')
-
-    # TODO: Check if user is in jury group.
-
-    return render(request, 'cosplay/wait.html')
 
 
 def dashboard(request):
     if not request.user.is_authenticated():
         return redirect('/cosplay/login')
 
-    # TODO: Check if user is in jury group.
+    if not request.user.groups.filter(name='Jury').count():
+        return redirect('/reception')
+
+    # TODO: Page data.
 
     return render(request, 'cosplay/dashboard.html')

@@ -5,6 +5,9 @@ def index(request):
     if not request.user.is_authenticated():
         return redirect('/login')
 
+    if request.user.groups.filter(name='Jury').count():
+        return redirect('/cosplay/dashboard')
+
     if request.user.is_staff:
         return redirect('/')
 
