@@ -10,8 +10,8 @@ import reversion
 
 class CosplayerAdmin(AdminImageMixin, reversion.VersionAdmin):
     form = select2_modelform(Cosplayer)
-    list_display = ('picture_thumbnail', 'character_name',
-                    'ticket', 'notes', 'contest_number', 'register_date')
+    list_display = ('picture_thumbnail', 'costume_category', 'character_name',
+                    'made_own_costume', 'ticket', 'notes', 'contest_number', 'register_date')
     list_display_links = ('character_name', )
     search_fields = ('character_name', 'ticket', 'notes', 'contest_number')
     list_filter = ('register_date', )

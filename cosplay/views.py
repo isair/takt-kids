@@ -1,3 +1,4 @@
+from cosplay.models import Cosplayer, JuryVote
 from django.shortcuts import render, redirect
 
 
@@ -15,6 +16,24 @@ def dashboard(request):
     if not request.user.groups.filter(name='Jury').count():
         return redirect('/reception')
 
-    # TODO: Page data.
+    cosplayer_id = request.GET.get('cosplayer', None)
 
-    return render(request, 'cosplay/dashboard.html')
+    if cosplayer_id:
+        cosplayer = Cosplayer.objects.get(id=cosplayer_id)
+    else:
+        cosplayer = None
+
+    try:
+        jury_votes = JuryVote.objects.get(jury_member=request.user)
+    except:
+        jury_votes = None
+
+    return render(request, 'cosplay/dashboard.html', {
+        'cosplayers': Cosplayer.objects.all(),
+        'selected_cosplayer': cosplayer,
+        'jury_votes': jury_votes
+    })
+
+
+def juryvote(request):
+    return redirect('/cosplay/dashboard')
