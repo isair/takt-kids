@@ -93,3 +93,28 @@ def juryvote(request):
         return redirect('/cosplay/dashboard?cosplayer=' + request.POST.get('selected_cosplayer', None))
 
     return redirect('/cosplay/dashboard?cosplayer=' + request.POST.get('selected_cosplayer', None))
+
+
+def top_cosplayers(request):
+    jury_vote_averages = []
+    cosplayers = Cosplayer.objects.filter(ticket__event=get_current_event())
+
+    if cosplayers:
+        for cosplayer in cosplayers:
+            jury_votes = JuryVote.objects.filter(contestant=cosplayer)
+
+            if jury_votes:
+                jury_votes_average = 0
+                jury_votes_count = 0
+                for jury_vote in jury_votes:
+                    jury_votes_average += jury_vote.vote_points
+                    jury_votes_count += 1
+                jury_votes_average /= jury_votes_count
+                jury_vote_averages.append((jury_votes_average, cosplayer))
+        jury_vote_averages = sorted(jury_vote_averages, key=lambda x: x[1])
+
+        return render(request, 'cosplay/top.html', {
+            'jury_vote_averages': jury_vote_averages
+        })
+    else:
+        return render(request, 'cosplay/top.html')
