@@ -113,7 +113,7 @@ def top_cosplayers(request):
                     jury_votes_count += 1
                 jury_votes_average /= jury_votes_count
                 jury_vote_averages.append((jury_votes_average, cosplayer))
-        jury_vote_averages = reversed(sorted(jury_vote_averages, key=lambda x: x[1]))
+        jury_vote_averages = reversed(sorted(jury_vote_averages, key=lambda x: x[0]))
 
         return render(request, 'cosplay/top.html', {
             'jury_vote_averages': jury_vote_averages
