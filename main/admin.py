@@ -33,7 +33,7 @@ class TicketAdmin(reversion.VersionAdmin):
     def achievement_count(self, obj):
         return obj.achievement_count
 
-    achievement_count.admin_order_field = 'artist_count'
+    achievement_count.admin_order_field = 'achievement_count'
 
     def formfield_for_manytomany(self, db_field, request, **kwargs):
         if (db_field.name == "achievements" or db_field.name == 'cards') and getattr(self, 'obj', None):
