@@ -29,7 +29,7 @@
                 <ul class="dropdown-menu">
                     {% for cosplayer in cosplayers %}
                         <li>
-                            <a href="/cosplay/dashboard?cosplayer={{ cosplayer.id }}">{{ cosplayer.character_name }} - {{ cosplayer.ticket.owner_name }}</a>
+                            <a href="/cosplay/dashboard?cosplayer={{ cosplayer.id }}">{{ cosplayer.ticket.owner_name }} <strong>--</strong> {{ cosplayer.character_name }}</a>
                         </li>
                     {% endfor %}
                 </ul>
