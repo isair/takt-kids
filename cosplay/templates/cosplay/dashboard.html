@@ -39,7 +39,7 @@
             {% if selected_cosplayer %}
                 <div class="jumbotron">
                     {% if selected_cosplayer.picture %}
-                        {{ selected_cosplayer.picture_thumbnail }}
+                        {{ selected_cosplayer.picture_thumbnail | safe }}
                     {% endif %}
                     <h3>
                         <u>{{ selected_cosplayer.ticket.owner_name }}</u>
