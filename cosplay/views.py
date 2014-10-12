@@ -69,6 +69,8 @@ def juryvote(request):
         print('vote points not provided')
         return redirect('/cosplay/dashboard')
 
+    vote_points = int(vote_points)
+
     if vote_points < 0:
         vote_points = 0
     elif vote_points > 10:
