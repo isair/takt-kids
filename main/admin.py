@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.contrib.admin.models import LogEntry
+from django.db.models import Count
 from main.models import *
 
 import reversion
@@ -14,7 +15,7 @@ class EventAdmin(reversion.VersionAdmin):
 class TicketAdmin(reversion.VersionAdmin):
     list_display = ('event', 'ticket_number', 'free', 'voucher_number',
                     'owner_name', 'owner_gender', 'owner_year_of_birth',
-                    'notes', 'register_date')
+                    'achievement_count', 'notes', 'register_date')
     list_display_links = ('ticket_number', )
     search_fields = ('owner_name', 'ticket_number', 'owner_year_of_birth',
                      'voucher_number', 'owner_name', 'notes')
@@ -24,8 +25,15 @@ class TicketAdmin(reversion.VersionAdmin):
 
     def get_object(self, request, object_id):
         self.obj = super(TicketAdmin, self).get_object(request, object_id)
-
         return self.obj
+
+    def queryset(self, request):
+        return Ticket.objects.annotate(achievement_count=Count('achievements'))
+
+    def achievement_count(self, obj):
+        return obj.achievement_count
+
+    achievement_count.admin_order_field = 'artist_count'
 
     def formfield_for_manytomany(self, db_field, request, **kwargs):
         if (db_field.name == "achievements" or db_field.name == 'cards') and getattr(self, 'obj', None):
