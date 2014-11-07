@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/isair/takt-kids.png?label=ready&title=Ready)](https://waffle.io/isair/takt-kids)
 Introduction
 --------------
 
