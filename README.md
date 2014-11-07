@@ -1,6 +1,7 @@
 [![Stories in Ready](https://badge.waffle.io/isair/takt-kids.png?label=ready&title=Ready)](https://waffle.io/isair/takt-kids)
 Introduction
 --------------
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/isair/takt-kids?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 K.I.D.S. is the web based system which handles the ticket sales, achievement tracking, cosplay contest management, and many more aspects of the biggest subculture event (as of this writing) in Turkey. It stands for __KONTAKT Information Distribution System__.
 
